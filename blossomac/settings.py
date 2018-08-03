@@ -25,7 +25,7 @@ SECRET_KEY = 'bsw3$cl73!!5p$zhldv6%68+$q+pxn0+tjrsji01)0*gxn#c%-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://blossomacademy.herokuapp.com']
+ALLOWED_HOSTS = ['https://blossomacademy.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
