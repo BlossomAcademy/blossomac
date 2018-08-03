@@ -1,0 +1,135 @@
+
+{% extends "base.html" %}
+{% block initial_content %}
+{% load static %}
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+      <div class="carousel-inner" style="max-height: 550px;">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'images/home_jumbotron.jpeg' %}" alt="First slide">
+        </div>
+        <div class="carousel-caption d-none d-md-block row">
+          <div class="col-4">
+            <h3 class="text-dark text-left font-weight-bold"  style=" float:left;">Blossom Academy trains top talent from West Africa to become data scientists, and places them as distributed team members with leading tech startups.</h3>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </head>
+  <body>
+    <div style="min-height:400px;" class="bg-light ">
+      <div class="container">
+        <h3 class="text-center font-weight-bold p-5"> Changing the way the best tech startups hire</h3>
+        <div class="row">
+            <div class="col-sm-4 col-12">
+              <div class="d-flex justify-content-center">
+                <i class="fas fa-user-circle fa-3x shadow p-3 mb-5 bg-white rounded rounded-circle" style="color:#dc3545;"></i>
+              </div>
+              <div class="row">
+                <div class="d-flex justify-content-center col-12 p-1">
+                  <h3 class="text-center text-danger"> Recruit</h3>
+                </div>
+                <p class="text-center font-weight-low p-2">We’re selective about our data science talent, recruiting the top 0.7% of university graduates in Ghana.</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-12">
+              <div class="d-flex justify-content-center">
+                <i class="fas fa-book-open fa-3x shadow p-3 mb-5 bg-white rounded rounded-circle" style="color:#dc3545;"></i>
+              </div>
+              <div class="row">
+                <div class="d-flex justify-content-center col-12 p-1">
+                  <h3 class="text-center text-danger"> Develop</h3>
+                </div>
+                <p class="text-center font-weight-low p-2">Through our intensive training, we turn statisticians, actuaries, and software engineers into world-class data scientists.</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-12">
+              <div class="d-flex justify-content-center">
+                <i class=" fas fa-rocket fa-3x   shadow p-3 mb-5 bg-white rounded rounded-circle" style="color:#dc3545;"></i>
+              </div>
+              <div class="row">
+                <div class="d-flex justify-content-center col-12 p-1">
+                  <h3 class="text-center text-danger"> Deploy</h3>
+                </div>
+                <p class="text-center font-weight-low p-2" style="">We deliver job-ready data science talent fast, cutting down on-boarding time so you can focus on your project’s success.</p>
+              </div>
+            </div>
+        </div>
+        
+        <!--- <h1 class="pt-5"> In Ghana, 250,000 college grads enter the job market each year, but only 2%, or 5,000, find private-sector jobs (The Ghana Living Standards Survey) — a pattern that is similar throughout Africa. This is commonly attributed to the limited focus on student’s development of practical skills on the university level, which means many graduate ill-prepared to meet the demands of the labor market.</blockquotes>
+        <i class="fas fa-times-circle" style="color:red"></i> --->
+      </div>
+    </div>
+
+    <div class="parallax"></div>
+    
+
+    <div class="bg-light">
+      <div class="container">
+        <h3 class="text-center font-weight-bold p-5 "> What our fellows are saying about us</h3>
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <div class="container">
+              <p class="text-center"><img src="{% static 'images/quote_home_1.jpeg' %}" class="img-fluid" alt="Responsive image" style="height:200px; width:300px;"></p>
+              <div class="card-body">
+                <blockquote class="blockquote mb-2">
+                  <p class=" border-right pr-1 text-danger">Coming from an Actuarial background, Blossom Academy has given me  a broader knowledge of what can be done with data in the finance and insurance industry. I'm much better prepared to work with data than before.</p><p class="text-center"><i class="fas fa-quote-right "></i></p>
+                  <footer class="blockquote-footer text-center">Philemon Aidoo</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="container">
+              <p class="text-center"><img src="{% static 'images/quote_home_2.jpeg' %}" class="img-fluid " alt="Responsive image" style="height:200px;width:300px;"></p>
+              <div class="card-body">
+                <blockquote class="blockquote mb-2">
+                  <p class=" border-right text-danger">Thanks to Blossom Academy,  I have gotten a step by step training in programming in R and Python plus a deeper understanding of working with large data sets in machine learning. Now almost perfect prediction can be made.</p><p class="text-center"><i class="fas fa-quote-right "></i></p>
+                  <footer class="blockquote-footer text-center">Bridget </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="container pb-5">
+              <p class="text-center"><img src="{% static 'images/quote_home_3.jpeg' %}" class="img-fluid " alt="Responsive image" style="height:200px; width:300px;"></p>
+              <div class="card-body">
+                <blockquote class="blockquote mb-2">
+                  <p class=" border-right text-danger">Until now my idea of "making the world a better place" was building 'that app' but after being introduced to Machine Learning and Data Science , I now know better.</p><p class="text-center"><i class="fas fa-quote-right "></i></p>
+                  <footer class="blockquote-footer text-center">- Samuel</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid p-0 m-0" style=' min-height:130px; background-image: url("{% static 'images/background_blossom.jpg' %}") ;'>
+        <h3 class="text-center text-light font-weight-bold pt-4"> Ready to Blossom?</h3>
+        <a href="{% url 'joinblossom' %}"><p class="text-center"><button type="button" class="btn btn-outline-light btn-lg" style="border-radius: 50px;">Learn More<i class="fas fa-chevron-right p-2"></i></button></p></a>
+    </div>
+    
+    
+
+    <div class="container" style="max-height: 150px;">
+      <h3 class="text-center font-weight-bold"> In the News</h3>
+      <div class="row pt-2">
+        <div class="col-4">
+          <div class="container">
+            <a href="https://www.businessdayonline.com/news/education/article/blossom-academy-bridges-gap-universities-data-science-careers/"><p class="text-center"><img src="{% static 'images/businessday.png' %}" class="img-fluid rounded rounded-circle" alt="Responsive image" style="max-height:100px; max-width:130px;"></p></a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="container">
+            <a href="http://cornellsun.com/2018/03/09/annual-africa-week-celebrates-continents-culture-through-fashion-film-and-entrepreneurial-inspiration/"><p class="text-center"><img src="{% static 'images/cornellsun.png' %}" class="img-fluid rounded rounded-circle" alt="Responsive image" style="max-height:100px; max-width:150px;"></p></a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="container pb-5">
+            <a href="http://disrupt-africa.com/2018/08/data-science-talent-accelerator-launched-in-ghana/"><p class="text-center"><img src= "{% static 'images/disrupt_africa.png' %}" class="img-fluid" alt="Responsive image" style="max-height:100px; max-width:150px;"></p></a>
+          </div>
+        </div>   
+      </div>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block initial_content %}
+{% load static %}
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+      <div class="carousel-inner" style="max-height: 550px;">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'images/joinjoin.jpg' %}" alt="First slide">
+        </div>
+        <div class="carousel-caption d-none d-md-block row">
+          <div class="col-4">
+            <h3 class="text-left font-weight-bold" style="float:left; color:black;">At Blossom Academy, it’s more than a job—we give you the technical and leadership skills needed to launch meaningful careers in Data Science</h3>
+            <div class="row col-12">
+              <a href="https://blossomacademy1.typeform.com/to/jswgK4"><p class="text-left"><button type="button" class="btn btn-danger btn-lg">Apply Now<i class="fas fa-chevron-right p-2"></i></button></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body class="m-0 p-0" style="">
+
+    
+    <div style="min-height:250px;" class="bg-light">
+      <div class="container border-top p-5">
+        <h3 class="text-center text-danger font-weight-bold p-2">Don’t Just Take Our Word For It </h3>
+        <p class="text-center"> Want to know what it's really like at Blossom? Hear about it directly from our fellows.</p>
+        <div class="row">
+          <div class="embed-responsive embed-responsive-16by9 col-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9 col-4">
+            <iframe class="embed-responsive-item pl-1" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9 col-4">
+            <iframe class="embed-responsive-item pl-1" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div> 
+        </div>
+      </div>
+    </div>
+    
+    <div style="min-height:200px;" class="">
+      <div class="container border-top p-5 ">
+        <h3 class="text-center text-danger font-weight-bold pb-3"> Our Promise</h3>
+        <p class="text-center"> A training program that provides you with data science skills and experience and then integrate you into the best startup technology companies. With a strong emphasis on a custom-tailored curriculum, actual industry experience, and one-on-one attention, our year-long program positions you to be the best data scientist.</p>
+      </div>
+    </div>
+    
+
+    
+    <div class="container-fluid p-0 m-0" style= "min-height:130px; background-image: url('{%static "images/background_blossom.jpg" %}');">
+      <h3 class="text-center text-light font-weight-bold pt-4 pb-2">Ready to Launch Your Data Science Career?</h3>
+        <div class="text-center pt-1 pb-2">
+          <a href="https://blossomacademy1.typeform.com/to/jswgK4" class="text-center"><button type="button" class="btn btn-outline-light btn-lg" style="border-radius: 50px;">Apply Now<i class="fas fa-chevron-right p-2"></i></button></a>
+        </div>
+      </div>
+    
+  </body>
+{% endblock %}

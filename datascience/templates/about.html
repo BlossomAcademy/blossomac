@@ -1,0 +1,196 @@
+
+{% extends "base.html" %}
+{% block initial_content %}
+{% load static %}
+
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+      <div class="carousel-inner" style="max-height: 550px;">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'images/abaut1.png' %}" alt="First slide">
+        </div>
+        <div class="carousel-caption d-none d-md-block row">
+          <div class="col-4">
+            <h3 class="text-light text-left font-weight-bold" style="float:left;">We believe there are massive pools of incredibly talented youth across Africa; it is imperative to connect them to the global economy.</h3>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body>
+    <div style="min-height:250px;" class="bg-light shadow p-3 mb-5 bg-white rounded">
+      <div class="container pt-3">
+        <h3 class=" font-weight-bold pb-4 text-left"> We are on a movement to build the next generation of Ghanaian data scientists</h3>
+        <p>Technology startups are generating large amounts of data about their customers and their buying behavior. However, they cannot find nearly enough data scientists to analyze this data for strategic decision making.</p>
+        <p>According to IBM, the number of data science roles is projected to see a demand spike by 28% and job listings are projected to grow to approximately 2.7 million by 2020. Africa, meanwhile, has the youngest population and 7 of the 10 fastest growing internet populations in the world.</p>
+        <p>We founded Blossom Academy in 2018 to create a pathway where Ghanaian university graduates with diverse backgrounds can build the knowledge, skills and abilities to reach their potential as data science professionals and leverage those talents to contribute to the growth and success of our clients. </p>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-4">
+            <img src='{% static "images/ab1.jpeg" %}' class="img-fluid rounded" alt="Responsive image" style="height:auto; width:auto; ">
+        </div>
+        <div class="col-8 d-flex align-items-center">
+            <div class="container">
+                <h3 class="font-weight-bold"> Our Mission </h3>
+                <p class="" style="">  Our mission is to connect talent across Africa to the global economy by providing the necessary next-gen and leadership skills.</p>    
+            </div>
+        </div>
+    </div>
+    <div class="pt-5">
+        <div class="row">
+            <div class="col-8 d-flex align-items-center">
+                <div class="container ">
+                    <h3 class="font-weight-bold pl-4"> Our Vision </h3>
+                    <p class="pl-4" style="">  Our vision is to create Africa’s most diverse and dynamic community of highly skilled and creative technology pioneers who are able to affect change and promote progress.</p>    
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="{%static 'images/jinpen.png' %}" class="img-fluid rounded" alt="Responsive image" style="height:auto;width:auto;">
+            </div>
+        </div>
+    </div>
+    
+    <div class="row pt-5 pb-5">
+        <div class="col-4">
+            <img src="{%static 'images/ab3.jpeg' %}" class="img-fluid rounded" alt="Responsive image" style="height:auto;width:auto;">
+        </div>
+        <div class="col-8 d-flex align-items-center">
+            <div class="container">
+                <h3 class="font-weight-bold"> Our Core Values </h3>
+                <p class="" style="">  We are a group of people with wide-ranging passions and aspirations, united by common values which includes Be Disciplined, Have Integrity, Cultivate Grit, Develop Excellence, Practice Resourcefulness, and Pursue Growth. </p>    
+            </div>
+        </div>
+    </div>
+    
+    <div style="min-height:250px;" class="bg-light shadow p-3 mb-5 bg-white rounded">
+      <div class="container p-5">
+        <h3 class=" text-center pb-2 font-weight-bold"> Our Leadership Team</h3>
+        <p class="text-center "> Our leadership team combines visionary thinking, seasoned expertise, and a passion for results. With extensive backgrounds in technology, data science, and business enterprises ranging from global corporations to start-ups, we bring the insight and expertise necessary to deliver successful outcomes for our diverse range of clients.</p>
+      </div>
+    </div>
+    
+    <div class="container-fluid">
+    <div class="card-group">
+      <div class="card">
+        <div class="hovereffect">
+            <img class="card-img-top" src="{%static 'images/jeph2.jpeg' %}" style="height:332px;" alt="Card image cap">
+            <div class="overlay">
+                <h2>Jeph Acheampong</h2>
+                <p>
+                    <a href="#">CEO</a>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 ">
+                        <ul class="list-unstyled list-inline social text-center">
+                          <li class="list-inline-item"><a class="text-light" href="javascript:void();"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                      </hr>
+                    </div>
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="hovereffect">
+            <img class="card-img-top" src="{%static 'images/vicky.jpg' %}" style="height:332px;" alt="Card image cap">
+            <div class="overlay">
+                <h2>Vicky Plange</h2>
+                <p>
+                    <a href="#">VP Persons and Culture</a>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 ">
+                        <ul class="list-unstyled list-inline social text-center">
+                          <li class="list-inline-item"><a class="text-light" href="javascript:void();"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                      </hr>
+                    </div>
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="hovereffect">
+            <img class="card-img-top" src="{% static 'images/kdh.jpg' %}" style="height:332px;" alt="Card image cap">
+            <div class="overlay">
+                <h2>Kenneth Harlley</h2>
+                <p>
+                    <a href="#">Web Development Lead</a>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 ">
+                        <ul class="list-unstyled list-inline social text-center">
+                          <li class="list-inline-item"><a class="text-light" href="javascript:void();"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                      </hr>
+                    </div>
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-group">
+      <div class="card">
+        <div class="hovereffect">
+            <img class="card-img-top" src="{%static 'images/jeph2.jpeg' %}" style="height:332px;" alt="Card image cap">
+            <div class="overlay">
+                <h2>Jeph Acheampong</h2>
+                <p>
+                    <a href="#">CEO</a>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 ">
+                        <ul class="list-unstyled list-inline social text-center">
+                          <li class="list-inline-item"><a class="text-light" href="javascript:void();"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                      </hr>
+                    </div>
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="hovereffect">
+            <img class="card-img-top" src="{%static 'images/vicky.jpg' %}" style="height:332px;" alt="Card image cap">
+            <div class="overlay">
+                <h2>Vicky Plange</h2>
+                <p>
+                    <a href="#">VP Persons and Culture</a>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 ">
+                        <ul class="list-unstyled list-inline social text-center">
+                          <li class="list-inline-item"><a class="text-light" href="javascript:void();"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                      </hr>
+                    </div>
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="hovereffect">
+            <img class="card-img-top" src="{% static 'images/kdh.jpg' %}" style="height:332px;" alt="Card image cap">
+            <div class="overlay">
+                <h2>Kenneth Harlley</h2>
+                <p>
+                    <a href="#">Web Development lead</a>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 ">
+                        <ul class="list-unstyled list-inline social text-center">
+                          <li class="list-inline-item"><a class="text-light" href="javascript:void();"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                      </hr>
+                    </div>
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </body>
+    {% endblock %}
