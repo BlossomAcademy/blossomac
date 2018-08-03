@@ -26,8 +26,8 @@ def home(request):
             #subject = form.cleaned_data['subject']
             #message = form.cleaned_data['message']
             sender = form.cleaned_data['sender']
-            email = EmailMessage('Confirmation of Subscription', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from noe on. Get ready to blossom! \n Regards, \n Blossom Team', to=[sender])
-            email.send()
+            """email = EmailMessage('Confirmation of Subscription', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from noe on. Get ready to blossom! \n Regards, \n Blossom Team', to=[sender])
+            email.send()"""
             feedback = Feedback(sender=sender)
             feedback.save()
 
