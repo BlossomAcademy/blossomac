@@ -5,14 +5,14 @@ from django.core.mail import EmailMessage
 from django.http import HttpResponse
 
 
-
+import os
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from .forms import ContactForm
 from .models import Feedback
-
+import sendgrid
 informationB = Feedback.objects.all
 
 
@@ -23,9 +23,18 @@ def home(request):
     if request.method == 'POST': # If the form has been submitted...
         form = ContactForm(request.POST) # A form bound to the POST data
         if form.is_valid(): # All validation rules pass
+
+
             #subject = form.cleaned_data['subject']
             #message = form.cleaned_data['message']
             sender = form.cleaned_data['sender']
+            sg = sendgrid.SendGridClient(os.getenv('YOUR_SENDGRID_API_KEY', 'default_value'))
+            message = sendgrid.Mail()
+            message.add_to(sender)
+            message.set_from('app104690940@heroku.com')
+            message.set_subject('Confirmation of Subscription')
+            message.set_html('Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from now on. Get ready to blossom! \n Regards, \n Blossom Team')
+            sg.send(message)
             """email = EmailMessage('Confirmation of Subscription', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from noe on. Get ready to blossom! \n Regards, \n Blossom Team', to=[sender])
             email.send()"""
             feedback = Feedback(sender=sender)
