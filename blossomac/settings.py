@@ -129,7 +129,7 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'static')
 ]
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
+"""
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = os.getenv('SENDGRID_USERNAME', 'Optional default value')
 EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_PASSWORD', 'Optional default value')
@@ -139,7 +139,7 @@ EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'comeblossom.gh@gmail.com'
-EMAIL_HOST_PASSWORD = 'blossomacademy2016'
-EMAIL_PORT = 587"""
+EMAIL_HOST_USER = os.getenv('EMAIL', 'Optional default value')
+EMAIL_HOST_PASSWORD = os.getenv('PASS', 'Optional default value')
+EMAIL_PORT = 587
 django_heroku.settings(locals())
