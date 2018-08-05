@@ -131,8 +131,8 @@ STATICFILES_DIRS=[
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'app104690940@heroku.com'
-EMAIL_HOST_PASSWORD = 'zz5zgxap5681'
+EMAIL_HOST_USER = os.getenv('SENDGRID_USERNAME', 'Optional default value')
+EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_PASSWORD', 'Optional default value')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 """
