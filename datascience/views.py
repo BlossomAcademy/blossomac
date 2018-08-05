@@ -29,7 +29,7 @@ def home(request):
             #subject = form.cleaned_data['subject']
             #message = form.cleaned_data['message']
             sender = form.cleaned_data['sender']
-            send_mail('Subject here', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from now on. Get ready to blossom! \n Regards, \n Blossom Team', 'info@blossomacademy.co', [sender], fail_silently=True)
+            send_mail('Subject here', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from now on. Get ready to blossom! \n Regards, \n Blossom Team', 'info@blossomacademy.co', [sender], fail_silently=False)
             feedback = Feedback(sender=sender)
             feedback.save()
 
