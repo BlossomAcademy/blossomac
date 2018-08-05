@@ -43,9 +43,9 @@ def home(request):
             message.set_subject('Confirmation of Subscription')
             message.set_html('Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from now on. Get ready to blossom! \n Regards, \n Blossom Team')
             sg.send(message)"""
-            """email = EmailMessage('Confirmation of Subscription', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from noe on. Get ready to blossom! \n Regards, \n Blossom Team', to=[sender])
-            email.send()"""
-            send_mail('Subject here', 'Here is the message.', 'info@blossomacademy.co', [sender], fail_silently=True)
+            email = EmailMessage('Confirmation of Subscription', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from noe on. Get ready to blossom! \n Regards, \n Blossom Team', to=[sender])
+            email.send()
+            """send_mail('Subject here', 'Here is the message.', 'info@blossomacademy.co', [sender], fail_silently=True)"""
             feedback = Feedback(sender=sender)
             feedback.save()
 
