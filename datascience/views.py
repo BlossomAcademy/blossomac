@@ -29,23 +29,7 @@ def home(request):
             #subject = form.cleaned_data['subject']
             #message = form.cleaned_data['message']
             sender = form.cleaned_data['sender']
-            """sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('YOUR_SENDGRID_API_KEY'))
-            from_email = Email("info@blossomacademy.co")
-            subject = "Hello World from the SendGrid Python Library!"
-            to_email = Email(sender)
-            content = Content("text/plain", "Hello, Email!")
-            mail = Mail(from_email, subject, to_email, content)
-            #response = sg.client.mail.send.post(request_body=mail.get())"""
-            """sg = sendgrid.SendGridClient(os.getenv('YOUR_SENDGRID_API_KEY', 'default_value'))
-            message = sendgrid.Mail()
-            message.add_to(sender)
-            message.set_from('app104690940@heroku.com')
-            message.set_subject('Confirmation of Subscription')
-            message.set_html('Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from now on. Get ready to blossom! \n Regards, \n Blossom Team')
-            sg.send(message)"""
-            """email = EmailMessage('Confirmation of Subscription', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from noe on. Get ready to blossom! \n Regards, \n Blossom Team', to=[sender])
-            email.send()"""
-            send_mail('Subject here', 'Here is the message.', 'info@blossomacademy.co', [sender], fail_silently=True)
+            send_mail('Subject here', 'Dear Sir/Madam, \n \n Thanks for signing up! We shall be sending you updates from now on. Get ready to blossom! \n Regards, \n Blossom Team', 'info@blossomacademy.co', [sender], fail_silently=True)
             feedback = Feedback(sender=sender)
             feedback.save()
 
