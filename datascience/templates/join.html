@@ -1,13 +1,22 @@
 {% extends "base.html" %}
 {% block initial_content %}
 {% load static %}
+<style>
+  .carousel-caption {
+      top: 30%;
+      bottom: auto;
+      left: 2%;
+
+
+  }
+</style>
     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
       <div class="carousel-inner" style="max-height: 550px;">
         <div class="carousel-item active">
           <img class="d-block w-100" src="{% static 'images/joinjoin.jpg' %}" alt="First slide">
         </div>
         <div class="carousel-caption d-none d-md-block row">
-          <div class="">
+          <div class="col-4">
             <h3 class="text-center font-weight-bold" style="float:left; color:black; ">At Blossom Academy, it’s more than a job—we give you the technical and leadership skills needed to launch meaningful careers in Data Science</h3>
             <div class="row col-12">
               <a href="https://blossomacademy1.typeform.com/to/jswgK4"><p class="text-center"><button type="button" class="btn btn-danger btn-lg">Apply Now<i class="fas fa-chevron-right p-2"></i></button></p></a>
