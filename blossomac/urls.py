@@ -21,8 +21,8 @@ from datascience import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='index'),
-    url(r'^joinblossom/', views.join_blossom, name='joinblossom'),
-    url(r'^partner/', views.become_partner, name='partner'),
+    url(r'^fasttrack/', views.join_blossom, name='joinblossom'),
+    url(r'^immersive/', views.become_partner, name='partner'),
     url(r'^about/', views.about_us, name='about'),
     url(r'^privacypolicy/', views.privacy_policy, name='privacypolicy'),
     url(r'^terms/', views.terms_services, name='terms'),
